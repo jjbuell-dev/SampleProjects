@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="MainViewController" customModule="CoreLocationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5849712695_1f41c8fbc2_b" translatesAutoresizingMaskIntoConstraints="NO" id="9eG-n5-FMd">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="426"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="YgT-BX-QF2">
+                                <rect key="frame" x="95" y="434" width="203" height="48.666666666666686"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(place name)" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="JfC-9y-qoQ">
+                                        <rect key="frame" x="48" y="0.0" width="107" height="20.333333333333332"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Current Location Unknown" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gm2-1V-hWw">
+                                        <rect key="frame" x="0.0" y="28.333333333333314" width="203" height="20.333333333333329"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" translatesAutoresizingMaskIntoConstraints="NO" id="TpE-kG-ECP">
+                                <rect key="frame" x="171.66666666666666" y="502.66666666666674" width="50" height="50"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fn3-9h-NkD">
+                                        <rect key="frame" x="0.0" y="0.0" width="50" height="50"/>
+                                        <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                        <state key="normal" image="location"/>
+                                        <connections>
+                                            <action selector="startLocationService:" destination="BYZ-38-t0r" eventType="touchUpInside" id="tSY-zJ-SL1"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ALANNchair_8960.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="cNs-OC-ukd">
+                                <rect key="frame" x="36.666666666666657" y="113.66666666666669" width="320" height="199"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="7PS-Az-PQB"/>
+                                    <constraint firstAttribute="height" constant="199" id="sN0-Xo-Pow"/>
+                                </constraints>
+                            </imageView>
+                            <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fTM-hs-Xeo">
+                                <rect key="frame" x="0.0" y="722" width="393" height="76"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="76" id="Tce-mz-KC7"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="1gd-gs-aoX" kind="embed" id="uTx-wv-k1a"/>
+                                </connections>
+                            </containerView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="9eG-n5-FMd" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="29w-CE-bwK"/>
+                            <constraint firstItem="fTM-hs-Xeo" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="4PF-aG-eVm"/>
+                            <constraint firstItem="fTM-hs-Xeo" firstAttribute="trailing" secondItem="8bC-Xf-vdC" secondAttribute="trailing" id="5NG-Yb-34E"/>
+                            <constraint firstItem="YgT-BX-QF2" firstAttribute="top" secondItem="9eG-n5-FMd" secondAttribute="bottom" constant="8" id="FC8-iS-Vb7"/>
+                            <constraint firstItem="9eG-n5-FMd" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="PXg-f3-WUe"/>
+                            <constraint firstItem="YgT-BX-QF2" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Vid-Dr-hdU"/>
+                            <constraint firstItem="9eG-n5-FMd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="byp-PO-1gZ"/>
+                            <constraint firstItem="cNs-OC-ukd" firstAttribute="centerX" secondItem="9eG-n5-FMd" secondAttribute="centerX" id="c0a-LB-Le2"/>
+                            <constraint firstItem="TpE-kG-ECP" firstAttribute="top" secondItem="YgT-BX-QF2" secondAttribute="bottom" constant="20" id="k6k-eg-V9g"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fTM-hs-Xeo" secondAttribute="bottom" constant="20" id="lAD-5F-uVM"/>
+                            <constraint firstItem="9eG-n5-FMd" firstAttribute="height" secondItem="8bC-Xf-vdC" secondAttribute="height" multiplier="0.5" id="nYf-fn-P14"/>
+                            <constraint firstItem="TpE-kG-ECP" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ssE-tb-wYk"/>
+                            <constraint firstItem="cNs-OC-ukd" firstAttribute="centerY" secondItem="9eG-n5-FMd" secondAttribute="centerY" id="w8V-1J-7m9"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="locationDistance" destination="gm2-1V-hWw" id="g9o-fS-HyC"/>
+                        <outlet property="placeImage" destination="cNs-OC-ukd" id="sJl-rP-A8t"/>
+                        <outlet property="placeName" destination="JfC-9y-qoQ" id="1Lx-jf-HYr"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="46.564885496183201" y="-2.1126760563380285"/>
+        </scene>
+        <!--Place Scroll View Controller-->
+        <scene sceneID="xxw-iI-mUh">
+            <objects>
+                <viewController id="1gd-gs-aoX" customClass="PlaceScrollViewController" customModule="CoreLocationSample" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="0in-Lu-EP9">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="76"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="99i-DV-VwW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="795" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="5849712695_1f41c8fbc2_b" width="1024" height="638"/>
+        <image name="ALANNchair_8960.jpg" width="320" height="480"/>
+        <image name="location" width="50" height="50"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

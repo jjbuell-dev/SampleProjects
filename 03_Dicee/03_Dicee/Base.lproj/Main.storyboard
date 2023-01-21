@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="g4m-uc-WLp">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Main View Controller-->
+        <scene sceneID="XyQ-CY-Wpr">
+            <objects>
+                <viewController id="g4m-uc-WLp" customClass="MainViewController" customModule="_3_Dicee" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="qcV-n8-Zj2">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="GreenBackground" translatesAutoresizingMaskIntoConstraints="NO" id="2Bz-hw-xby">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                            </imageView>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceeLogo" translatesAutoresizingMaskIntoConstraints="NO" id="Osi-mP-nPd">
+                                <rect key="frame" x="98.666666666666686" y="91" width="196" height="128"/>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" spacing="60" translatesAutoresizingMaskIntoConstraints="NO" id="DL8-pz-6ex">
+                                <rect key="frame" x="46.666666666666657" y="369" width="300" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceOne" translatesAutoresizingMaskIntoConstraints="NO" id="kwN-rD-idc">
+                                        <rect key="frame" x="0.0" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="120" id="NzG-Pu-hig"/>
+                                            <constraint firstAttribute="width" constant="120" id="y6N-jA-39I"/>
+                                        </constraints>
+                                    </imageView>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="DiceTwo" translatesAutoresizingMaskIntoConstraints="NO" id="aZo-dm-0KK">
+                                        <rect key="frame" x="180" y="0.0" width="120" height="120"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="120" id="3Ra-eu-ocV"/>
+                                            <constraint firstAttribute="height" constant="120" id="ywd-n6-eiU"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5C9-c0-OSc">
+                                <rect key="frame" x="147.33333333333334" y="609" width="98.333333333333343" height="48"/>
+                                <color key="backgroundColor" red="0.6093648076" green="0.1100902334" blue="0.12032099810000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                <state key="normal" title="ROLL">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <action selector="rollButtonPressed:" destination="g4m-uc-WLp" eventType="touchUpInside" id="yU5-Xv-Xzx"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="fFo-iv-03j"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="Osi-mP-nPd" firstAttribute="centerX" secondItem="qcV-n8-Zj2" secondAttribute="centerX" id="363-eM-hBU"/>
+                            <constraint firstItem="DL8-pz-6ex" firstAttribute="centerX" secondItem="Osi-mP-nPd" secondAttribute="centerX" id="3bd-WR-5AD"/>
+                            <constraint firstItem="5C9-c0-OSc" firstAttribute="top" secondItem="DL8-pz-6ex" secondAttribute="bottom" constant="120" id="61d-3R-Sfd"/>
+                            <constraint firstItem="Osi-mP-nPd" firstAttribute="top" secondItem="fFo-iv-03j" secondAttribute="top" constant="32" id="ACH-1Y-5u7"/>
+                            <constraint firstItem="DL8-pz-6ex" firstAttribute="top" secondItem="Osi-mP-nPd" secondAttribute="bottom" constant="150" id="B1E-4S-jrt"/>
+                            <constraint firstItem="2Bz-hw-xby" firstAttribute="leading" secondItem="qcV-n8-Zj2" secondAttribute="leading" id="OKw-e2-7sr"/>
+                            <constraint firstItem="5C9-c0-OSc" firstAttribute="width" secondItem="qcV-n8-Zj2" secondAttribute="width" multiplier="0.25" id="dJH-Yv-NbD"/>
+                            <constraint firstItem="5C9-c0-OSc" firstAttribute="centerX" secondItem="Osi-mP-nPd" secondAttribute="centerX" id="hJO-y8-gAC"/>
+                            <constraint firstAttribute="bottom" secondItem="2Bz-hw-xby" secondAttribute="bottom" id="iqr-vf-CnO"/>
+                            <constraint firstItem="2Bz-hw-xby" firstAttribute="top" secondItem="qcV-n8-Zj2" secondAttribute="top" id="mTd-DC-GXu"/>
+                            <constraint firstItem="2Bz-hw-xby" firstAttribute="trailing" secondItem="qcV-n8-Zj2" secondAttribute="trailing" id="wBQ-ly-Aha"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="diceOneImageView" destination="kwN-rD-idc" id="IlU-vn-TRP"/>
+                        <outlet property="diceTwoImageView" destination="aZo-dm-0KK" id="SaV-tH-Iai"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZnJ-Im-3ZD" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-170.22900763358777" y="15.492957746478874"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="DiceOne" width="100" height="100"/>
+        <image name="DiceTwo" width="100" height="100"/>
+        <image name="DiceeLogo" width="196" height="128"/>
+        <image name="GreenBackground" width="444.66665649414062" height="414.33334350585938"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

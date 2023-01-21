@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21507" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21505"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="PhotoFrame" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BNT-Q0-h0p">
+                                <rect key="frame" x="96.666666666666686" y="159" width="200" height="300"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="rickmorty" translatesAutoresizingMaskIntoConstraints="NO" id="8fY-iM-8oJ">
+                                        <rect key="frame" x="0.0" y="0.0" width="200" height="300"/>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="300" id="H3N-kf-T3a"/>
+                                    <constraint firstAttribute="bottom" secondItem="8fY-iM-8oJ" secondAttribute="bottom" id="QaT-AH-Zxh"/>
+                                    <constraint firstItem="8fY-iM-8oJ" firstAttribute="leading" secondItem="BNT-Q0-h0p" secondAttribute="leading" id="cLQ-D6-2U9"/>
+                                    <constraint firstAttribute="width" constant="200" id="hcE-7y-YnJ"/>
+                                    <constraint firstAttribute="trailing" secondItem="8fY-iM-8oJ" secondAttribute="trailing" id="tGA-b1-HsH"/>
+                                    <constraint firstItem="8fY-iM-8oJ" firstAttribute="top" secondItem="BNT-Q0-h0p" secondAttribute="top" id="uxM-Vg-LXL"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemGray5Color"/>
+                        <constraints>
+                            <constraint firstItem="BNT-Q0-h0p" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="LOA-yj-u9E"/>
+                            <constraint firstItem="BNT-Q0-h0p" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="100" id="aLX-ck-o48"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="100" y="-2"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="rickmorty" width="928" height="1270"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray5Color">
+            <color red="0.89803921568627454" green="0.89803921568627454" blue="0.91764705882352937" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
